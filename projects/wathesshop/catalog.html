@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-header__nav">
+                <a href="index.html"><img src="images/logo.png" alt="Logotype" class="main-header__logo"></a>
+                <ul class="main-header__navigation site-navigation">
+                    <li class="site-navigation__item">
+                        <a href="catalog.html" class="site-navigation__link">Каталог</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">Акции</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">Доставка</a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="main-header__user-navigation user-navigation">
+                    <li class="user-navigation__item"><a href="#" class="user-navigation__link">Поиск</a></li>
+                    <li class="user-navigation__item"><a href="#" class="user-navigation__link">Избранное</a></li>
+                    <li class="user-navigation__item"><a href="card.html" class="user-navigation__link">Корзина</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="index.html" class="breadcrumbs__link">Главная </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="catalog.html" class="breadcrumbs__link">Каталог </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="catalog.html" class="breadcrumbs__link">Мужские часы </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        <section class="catalog">
+            <div class="container">
+
+
+                <h2 class="section-title">Мужские часы</h2>
+                <div class="catalog__contant-wrapper">
+                    <form action="#">
+                        <fieldset class="catalog__filters filter">
+                            <legend class="filter__title">Стоимость<span class="filter__close-btn">-</span></legend>
+
+                            <input type="range" name="range" id="range" value="30" max="100">
+                        </fieldset>
+                        <fieldset class="catalog__filters filter">
+                            <legend class="filter__title">Бренд<span class="filter__close-btn">-</span></legend>
+                            <label>
+                                <input type="checkbox" name="brand" id=""> Techne
+                            </label>
+                            <label>
+                                <input type="checkbox" name="brand" id=""> Rado
+                            </label>
+                            <label>
+                                <input type="checkbox" name="brand" id=""> Bvlgari
+                            </label>
+                            <label>
+                                <input type="checkbox" name="brand" id=""> Tissot
+                            </label>
+                            <label>
+                                <input type="checkbox" name="brand" id=""> Omega
+                            </label>
+                            <label>
+                                <input type="checkbox" name="brand" id=""> Montblanc
+                            </label>
+                        </fieldset>
+                        <fieldset class="catalog__filters filter">
+                            <legend class="filter__title">Мезанизм<span class="filter__close-btn">-</span></legend>
+
+
+                        </fieldset>
+                        <fieldset class="catalog__filters filter">
+                            <legend class="filter__title">Цвет<span class="filter__close-btn">-</span></legend>
+
+
+                        </fieldset>
+                        <fieldset class="catalog__filters filter">
+                            <legend class="filter__title">Материал<span class="filter__close-btn">-</span></legend>
+
+
+                        </fieldset>
+                        <button type="reset" class="filter__btn btn">Сбросить фильтер</button>
+                    </form>
+                    <div class="filter__wrapper">
+                        <button class="filter__show-btn btn">Фильтры</button>
+                        <select name="sort" id="" class="filter__sort">
+                            <option value="none" disabled selected>Сортировать</option>
+                            <option value="Price">Цена</option>
+                            <option value="Popular">Популярность</option>
+                        </select>
+                    </div>
+                    <div class="catalog__items">
+                        <ul class="catalog__list">
+                            <li class="catalog__item item">
+                                <div class="item__name-wrapper">
+                                    <h3 class="item__name">BVLGARI</h3>
+                                    <p class="item__price">72 700 ₽</p>
+                                </div>
+
+                                <img src="images/catalogw1.png" alt="Product" class="item__img">
+
+                            </li>
+                            <li class="catalog__item item">
+                                <div class="item__name-wrapper">
+                                    <h3 class="item__name">BVLGARI</h3>
+                                    <p class="item__price">72 700 ₽</p>
+                                </div>
+
+                                <img src="images/catalogW2.png" alt="Product" class="item__img">
+
+                            </li>
+                            <li class="catalog__item item">
+                                <div class="item__name-wrapper">
+                                    <h3 class="item__name">BVLGARI</h3>
+                                    <p class="item__price">72 700 ₽</p>
+                                </div>
+
+                                <img src="images/catalogW3.png" alt="Product" class="item__img">
+
+                            </li>
+                            <li class="catalog__item item">
+                                <div class="item__name-wrapper">
+                                    <h3 class="item__name">BVLGARI</h3>
+                                    <p class="item__price">72 700 ₽</p>
+                                </div>
+
+                                <img src="images/catalogW4.png" alt="Product" class="item__img">
+
+                            </li>
+                            <li class="catalog__item item">
+                                <div class="item__name-wrapper">
+                                    <h3 class="item__name">BVLGARI</h3>
+                                    <p class="item__price">72 700 ₽</p>
+                                </div>
+
+                                <img src="images/catalogW5.png" alt="Product" class="item__img">
+
+                            </li>
+
+
+
+                            <li class="catalog__item item banner">
+                                <div class="banner__name-wrapper">
+                                    <span class="banner__price">-20%</span>
+                                    <p class="banner__description">НА ВТОРУЮ ПОЗИЦИЮ
+                                        В ЧЕКЕ</p>
+                                </div>
+
+
+
+                            </li>
+                            <li class="catalog__item item ">
+                                <div class="item__name-wrapper">
+                                    <h3 class="item__name">BVLGARI</h3>
+                                    <p class="item__price">72 700 ₽</p>
+                                </div>
+
+                                <img src="images/catalogW6.png" alt="Product" class="item__img">
+
+                            </li>
+                            <li class="catalog__item item">
+                                <div class="item__name-wrapper">
+                                    <h3 class="item__name">BVLGARI</h3>
+                                    <p class="item__price">72 700 ₽</p>
+                                </div>
+
+                                <img src="images/catalogW7.png" alt="Product" class="item__img">
+
+                            </li>
+                            <li class="catalog__item item">
+                                <div class="item__name-wrapper">
+                                    <h3 class="item__name">BVLGARI</h3>
+                                    <p class="item__price">72 700 ₽</p>
+                                </div>
+
+                                <img src="images/catalogW8.png" alt="Product" class="item__img">
+
+                            </li>
+
+
+                        </ul>
+                        <ul class="catalog__pagination pagination">
+                            <li class="pagination__item"><a href="#" class="pagination__link">&#60;</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                            <li class="pagination__item"><a href="#"
+                                    class="pagination__link pagination__link-active">3</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">...</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">12</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">&#62;</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="accessories">
+            <div class="container accessories__container">
+                <h2 class="section-title">Ремешки</h2>
+                <ul class="accessories__list">
+                    <li class="accessories__item item">
+                        <div class="item__name-wrapper">
+                            <h3 class="item__name">GEORG JENSEN</h3>
+                            <p class="item__price">6 500
+                                ₽</p>
+                        </div>
+                        <img src="images/acces1.png" alt="Product" class="item__img">
+                    </li>
+                    <li class="accessories__item item">
+                        <div class="item__name-wrapper">
+                            <h3 class="item__name">NATO</h3>
+                            <p class="item__price">3 200
+                                ₽</p>
+                        </div>
+                        <img src="images/acces2.png" alt="Product" class="item__img">
+                    </li>
+                    <li class="accessories__item item">
+                        <div class="item__name-wrapper">
+                            <h3 class="item__name">SPARK</h3>
+                            <p class="item__price">5 400
+                                ₽</p>
+                        </div>
+                        <img src="images/acces3.png" alt="Product" class="item__img">
+                    </li>
+
+                </ul>
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container main-footer__container">
+            <div class="main-footer__info">
+                <img src="images/footerConcuest.png" alt="Logotype" class="main-footer__logo">
+                <a href="tel:8 (499) 450-47-97
+                " class="main-footer__phone">8 (499) 450-47-97
+                </a>
+                <a href="mailtto:info@conquest.watch.ru" class="main-footer__email">info@conquest.watch.ru</a>
+            </div>
+            <div class="main-footer__links">
+                <h3 class="main-footer__title">
+                    о компании
+                </h3>
+
+                <ul class="main-footer__links-list">
+                    <li class="main-footer__item">
+                        <a href="#" class="main-footer__link">Наши магазины</a>
+                    </li>
+                    <li class="main-footer__item">
+                        <a href="#" class="main-footer__link">Вакансии</a>
+                    </li>
+                    <li class="main-footer__item">
+                        <a href="#" class="main-footer__link">Сертефикаты</a>
+                    </li>
+                    <li class="main-footer__item">
+                        <a href="#" class="main-footer__link">Отзывы</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main-footer__links">
+                <h3 class="main-footer__title">
+                    Покупателям
+                </h3>
+
+                <ul class="main-footer__links-list">
+                    <li class="main-footer__item">
+                        <a href="catalog.html" class="main-footer__link">Каталог товаров</a>
+                    </li>
+                    <li class="main-footer__item">
+                        <a href="#" class="main-footer__link">Как заказать?</a>
+                    </li>
+                    <li class="main-footer__item">
+                        <a href="#" class="main-footer__link">FAQ</a>
+                    </li>
+                    <li class="main-footer__item">
+                        <a href="#" class="main-footer__link">Корпоративным клиентам</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-footer__links">
+                <h3 class="main-footer__title">
+                    Оплата и доставка
+                </h3>
+
+                <ul class="main-footer__links-list">
+                    <li class="main-footer__item">
+                        <a href="#" class="main-footer__link">Способы оплаты</a>
+                    </li>
+                    <li class="main-footer__item">
+                        <a href="#" class="main-footer__link">Время доставки</a>
+                    </li>
+                    <li class="main-footer__item">
+                        <a href="#" class="main-footer__link">Гарантии и ремон</a>
+                    </li>
+                    <li class="main-footer__item">
+                        <a href="#" class="main-footer__link">Возврат и компенсация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,992 @@
+$montserat: 'Montserrat', sans-serif
+$old: 'Old Standard TT', serif
+$text: #695A59
+$textLightTitle: #EEE9E6
+$textLightText: #FBF3F0
+
+
+body
+    font-family: $montserat
+    color: $text
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+.container  
+    margin: 0 auto
+    max-width: 1170px
+    padding: 0 15px
+    
+    // column-gap: 20px
+img
+    max-width: 100%
+    height: auto
+    object-fit: cover
+
+
+.main-header 
+    padding: 20px 0
+    &__nav 
+        display: grid
+        grid-template-columns: repeat(12,1fr)
+        align-items: center
+        grid-gap: 10px
+    
+    &__logo 
+        grid-column: 1/span 4
+        display: grid
+        grid-template-columns: auto 1fr
+        column-gap: 10px
+        align-items: center
+        text-decoration: none
+        font-size: 14px
+        line-height: 20px
+        color: $text
+        font-weight: 500
+        // font-family: $montserat
+        justify-items: center
+        @media (max-width: 800px)
+            grid-row: 1/2
+            grid-column: 1/-1
+            justify-self: center
+            grid-template-columns: 1fr
+            row-gap: 10px
+            text-align: center
+            
+
+    &__description
+         
+        
+    
+    &__phone 
+        display: grid
+        grid-template-columns: auto auto 
+        grid-column: 7 / span 2  
+        font-size: 14px
+        line-height: 20px
+        color: $text
+        text-decoration: none
+        column-gap: 10px
+        @media (max-width: 800px)
+            grid-column: span 6
+        
+        &::before
+            justify-self: center
+            align-self: end
+            content: ''
+            background: white url(../images/headerPhone.svg) no-repeat center center
+            width: 18px
+            height: 18px
+            grid-row: 1/3
+            align-self: center
+            justify-self: end
+
+
+    &__call 
+        grid-column: 2/3
+        grid-row: 2/3
+        text-decoration: underline
+    
+    &__location 
+        grid-column: 9/span 3
+        font-size: 14px
+        line-height: 20px
+        color: $text
+        text-decoration: none
+        @media (max-width: 800px)
+            grid-column: span 5
+    
+    &__navigations 
+       
+    
+
+.navigations
+    display: none
+    grid-template-rows: repeat ( 3,auto)
+    width: 36px
+    height: 32px
+    // border: 1px solid #000
+    align-self: center
+    justify-self: end 
+    @media (max-width: 800px)
+        display: grid
+    &__item
+        display: inline-block
+        width: 100%
+        height: 2px 
+        // border-spacing: 10px
+        background: $text 
+        &:nth-child(2)
+            align-self: center
+            width: 70%
+            justify-self: center
+            opacity: .5
+        &:nth-child(3)
+            align-self: end
+.promo
+    padding-top: 80px 
+    background: url(../images/promoBg.png) no-repeat center top
+    @media (max-width: 670px)
+        padding: 20px 0 20px 0 
+    @media (max-width: 800px)
+        padding-top: 40px
+    &__container
+        display: grid
+        grid-template-columns: repeat(12,1fr)
+        grid-template-rows: repeat(3,auto ) 100px
+        row-gap: 30px
+        @media (max-width: 800px)
+            grid-template-rows: repeat(3,auto)
+        @media (max-width: 670px)
+            row-gap: 15px
+            
+
+
+    &__title 
+        grid-column: 2/ span 5
+        grid-row: 1/2
+        font-family: $old
+        color: $textLightTitle
+        font-style: normal
+        font-weight: normal
+        font-size: 46px
+        line-height: 64px
+        text-transform: uppercase
+        @media (max-width: 1100px)
+            font-size: 30px
+            line-height: 32px
+        @media (max-width: 800px)
+            font-size: 23px
+            line-height: 32px
+        @media (max-width: 670px)
+            grid-column: 1/-1
+            text-align: center
+        
+            
+    &__description 
+        font-size: 18px
+        line-height: 32px
+        color: #EEE9E6
+        opacity: 0.6
+        grid-column: 2/ span 5
+        grid-row: 2/3
+        @media (max-width: 800px)
+            line-height: 26px
+        @media (max-width: 670px)
+            grid-column: 2/-2
+            text-align: center
+    &__btn-wrapper 
+        grid-column: 2/span 3
+        grid-row: 3/4
+        @media (max-width: 670px)
+            grid-column: 5/-5
+            justify-self: center
+            
+    &__img
+        grid-column: 7/-1
+        grid-row: 1/-1
+        @media (max-width: 800px)
+            grid-row: span 3
+            // height: 100%
+        @media (max-width: 670px)
+            display: none
+    
+
+
+.container 
+
+.btn
+    font-family: $old
+    display: inline-block
+    padding: 15px
+    border: none
+    border-bottom: 1px solid #A78587
+    border-top: 1px solid #A78587
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 20px
+    text-align: center
+    background: transparent
+    color: #A78587
+    transition: .5s all 
+    @media(max-width: 800px)
+        padding: 10px 5px
+    &:hover
+        color: $textLightText
+        background: #a7858715
+        border-color: $textLightText
+.about 
+    padding-top: 80px
+    @media(max-width: 800px)
+        padding: 50px    
+    @media(max-width: 425px)
+        padding-top: 20px
+    &__container
+        display: grid
+        grid-template-columns: repeat(12,1fr)
+        row-gap: 30px
+    &__paragraph 
+        grid-column: 2/ span 6
+        line-height: 32px
+        color: #695A59
+        @media(max-width: 425px)
+            font-size: 15px
+            line-height: 20px
+            grid-column: 2/span 11
+        
+        b
+            font-weight: bold
+    
+    &__aside 
+        grid-column: 9/span 3
+        grid-row: 2/5
+        @media(max-width: 600px)
+            grid-column: 2/span 8
+            grid-row: 3/6
+        
+        img
+            // min-width: 150%
+            // min-height: 100%
+            object-fit: cover
+            margin-bottom: 18px
+        p 
+            font-weight: 500
+            font-size: 14px
+            line-height: 24px
+            color: #695A59
+    
+    &__paragraph-beauty 
+        grid-column: 1/-1
+        font-size: 26px 
+        line-height: 48px 
+        padding: 80px 90px
+        background: url(../images/aboutBg.jpg) no-repeat center center / cover
+        color: #FFFFFF;
+        @media(max-width: 800px)
+            padding: 40px 45px
+            line-height: 30px
+            font-size: 20px
+        @media(max-width: 425px)
+            font-size: 15px
+            padding: 20px 20px
+            line-height: 20px
+
+
+
+    
+    &__figure 
+        grid-column: 1/-1
+        display: grid
+        grid-template-columns: repeat(12,1fr)
+        column-gap: 20px
+        // grid-template-rows: auto
+        img
+            grid-column: 2/ span 7
+            
+        figcaption
+            grid-column: 9/ span 3
+            align-self: end
+            font-weight: 500;
+            font-size: 14px
+            line-height: 24px
+            color: #695A59
+            @media(max-width: 600px)
+                grid-column: 2/span 6
+            a
+                color: #9A8584
+    
+
+.container 
+
+.section-header 
+    grid-column: 1/-1
+    display: grid
+    grid-template-columns: repeat(12,1fr)
+    
+    font-family: $old
+    font-style: normal
+    font-weight: normal
+    font-size: 140px
+    line-height: 110px
+    text-transform: uppercase
+    color: #EAE1DC
+    @media(max-width: 1050px)
+        font-size: 100px
+        line-height: 60px
+    @media(max-width: 800px)
+        font-size: 0
+    & p 
+        grid-column: 1/-1
+        grid-row: 1/2
+        
+
+
+.section-title 
+    align-self: center
+    grid-column: 2/span 5
+    z-index: 2
+    font-size: 42px
+    line-height: 54px
+    grid-row: 1/2
+    color: #695A59
+    @media(max-width: 800px)
+        grid-column: 3/-3
+        justify-self: center
+    @media(max-width: 600px)
+        grid-column: 1/-1
+        text-align: center
+    @media(max-width: 425px)
+        font-size: 30px
+
+.catalog
+    padding: 100px 0 0 0
+    @media(max-width: 900px)
+        padding-top: 50px
+    &__container 
+        display: grid
+        grid-template-columns: repeat(12,1fr)
+        row-gap: 30px
+
+    
+    &__list 
+        grid-column: 1/-1
+        display: grid
+        grid-template-columns: repeat(12,1fr)
+        gap: 30px 20px
+    
+    &__item 
+        grid-column: 1 / span 4
+        display: grid
+        grid-template-rows: 240px auto
+        img
+            height: 100%
+        @media(max-width: 600px)
+            img
+                width: 100%
+        @media(max-width: 800px)
+            grid-column: span 6
+        @media(max-width: 600px)
+            grid-column: span 12
+            
+        &:nth-child(2)
+            grid-column: 5/span 4
+            @media(max-width: 800px)
+                grid-column: span 6
+            @media(max-width: 600px)
+                grid-column: span 12
+        &:nth-child(3)
+            grid-column: 9/span 4
+            @media(max-width: 800px)
+                grid-column: span 6
+            @media(max-width: 600px)
+                grid-column: span 12
+        &:nth-child(4)
+            display: grid
+            grid-column: span 6
+            grid-template-rows: auto
+            grid-template-columns: repeat(6,1fr)
+            column-gap: 20px
+            @media(max-width: 800px)
+                grid-column: span 12
+            
+
+        &:nth-child(5)
+            grid-column: span 6
+            grid-template-rows: auto
+            grid-template-columns: repeat(6,1fr)
+            column-gap: 20px
+            @media(max-width: 800px)
+                grid-column: span 12
+     
+    
+    
+
+.container 
+
+
+
+
+
+.item 
+    &__image
+        grid-column: 1/3 
+        max-width: 100%
+        min-height: auto
+        object-fit: cover
+    
+    &__description 
+        grid-column: 3/-1
+        align-self: center
+    
+    
+    &__name
+        font-family: $old
+        font-size: 32px
+        line-height: 36px
+        color: $text
+        margin-bottom: 20px
+        @media(max-width: 800px)
+            margin-top: 10px
+    
+    &__price 
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 24px;
+        color: #343235
+        margin-bottom: 20px
+    &__info 
+        font-weight: 500
+        font-size: 14px
+        line-height: 20px
+        color: $text
+        opacity: 0.6
+        margin-bottom: 20px
+    
+    &__offer 
+        font-weight: bold
+        font-size: 12px
+        line-height: 16px
+        text-transform: uppercase
+        color: #9A8584
+        text-decoration: none
+        &::after
+            display: inline-block
+            margin-left: 16px
+            content: ''
+            width: 80px
+            height: 8px
+            background: url(../images/decLine.svg) 
+.projects 
+    margin-top: 100px
+    padding-bottom: 100px
+    @media(max-width: 900px)
+        margin-top: 50px
+        padding-bottom: 50px
+    &__container
+        display: grid
+        grid-template-columns: repeat(12,1fr) 
+        row-gap: 30px
+    
+    &__content 
+        justify-self: center
+        grid-column: 1/-1
+        display: grid
+        grid-template-columns: repeat(12,1fr)
+        
+            
+        
+
+    
+
+
+
+
+.slider
+    grid-column: 2/ span 10
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: auto 100px 
+    @media screen and ( max-width: 600px)
+            grid-row: 1/2
+            grid-column: 1/-1
+            grid-template-rows: auto 50px
+    
+    & img
+        width: 100%
+        height: 100%
+        grid-column: 1/-1 
+        grid-row: 1/ 3
+    &__description
+        grid-row: 2/3
+        grid-column: 1/-1
+        z-index: 1
+        background: rgba(52, 50, 53, 0.9);
+        display: grid
+        grid-template-columns: 1fr 1fr
+        align-content: center
+    
+    
+    &__title 
+        font-family: $old
+        font-size: 32px
+        line-height: 36px
+        color: #F5F2ED
+        margin-left: 20px
+        @media screen and ( max-width: 600px)
+            font-size: 20px
+            line-height: 15px
+    
+    &__link 
+        font-size: 12px
+        line-height: 16px
+        text-align: center
+        text-transform: uppercase
+        color: #F5F2ED
+        text-decoration: none
+        justify-self: end
+        align-self: center
+        &::after
+            margin-left: 32px
+            margin-right: 32px
+            content: ''
+            display: inline-block
+            width: 32px
+            height: 8px
+            background:  url(../images/decLineSlider.svg) no-repeat center center
+
+    
+    &__btn
+        width: 72px
+        height: 72px
+        border-radius: 50%
+        border: none
+        font-size: 0
+        background: #343235
+        align-self: center
+        justify-self: center
+        @media(max-width: 900px)
+            width: 42px
+            height: 42px
+        @media screen and ( max-width: 600px)
+            z-index: 1
+
+    
+    &__btn-prev 
+        grid-column: 1/2
+        grid-row: 1/2
+        background-image: url(../images/SliderArrowPrev.svg)
+        background-repeat: no-repeat
+        background-position: center center
+        
+    
+    &__btn-next 
+       grid-column: 12/-1
+       grid-row: 1/2
+       background-image: url(../images/SliderArrowNext.svg)
+       background-repeat: no-repeat
+       background-position: center center
+        
+.mission 
+    // padding-bottom: 30px
+    
+    &__container 
+        display: grid
+        grid-template-columns: repeat(12,1fr)
+        grid-template-rows: 80px auto
+        gap: 20px
+        
+        background: #343235 url(../images/missionBg.jpg) no-repeat center bottom 35px
+        padding-bottom: 10px
+        @media screen and ( max-width: 800px)
+            background-position: bottom center
+    .section-header 
+        grid-column: 7/-1
+        grid-row: 2/3
+        font-size: 130px
+        line-height: 120px
+        color: rgba(154,133,132,.1)
+        @media(max-width: 1050px)
+            font-size: 100px
+            line-height: 60px
+        @media(max-width: 900px)
+            font-size: 0
+            p
+                display: none
+        @media screen and ( max-width: 800px)
+            grid-row: 1/3
+            
+            grid-column: 9/-1
+            
+        @media screen and ( max-width: 425px)
+            grid-column: 2/-2
+            grid-row: 1/2
+            
+
+    .section-title 
+        grid-column: 3/ -1
+        
+        color: $textLightTitle
+        // @media(max-width: 900px)
+        //     font-size: 0
+        @media screen and ( max-width: 800px)
+            font-size: 20px
+            line-height: 30px
+            align-self: center
+            grid-column: 1/-1
+            text-align: center
+        @media screen and ( max-width: 600px)
+            font-size: 20px
+            line-height: 30px
+            margin-top: 20px
+            grid-column: 1/-1
+            // align-self: center
+            
+            
+            
+        
+        
+    
+    &__video 
+        grid-column: 1/ span 6
+        grid-row: 1/ span 5
+        @media screen and ( max-width: 800px)
+            grid-column: 1/span 8
+            grid-row: 1/span 2
+        @media screen and ( max-width: 425px)
+            grid-row: 2/span 1
+            grid-column: 1/-1
+            
+        
+    
+    &__text 
+        // margin-top: 20px
+        grid-column: 8/ -1
+        grid-row: 3/ span 4
+        justify-self: end
+        font-weight: 500
+        font-size: 18px
+        line-height: 32px
+        color: #FBF3F0
+        @media screen and ( max-width: 800px)
+            grid-column: 2/-2
+            grid-row: 3/ 4
+            line-height: 20px
+        @media screen and ( max-width: 425px)
+            grid-row: 3/span 2
+
+    
+    &__paragraph 
+        margin-bottom: 20px
+        // text-align: right
+    
+    &__dog 
+        grid-column: 7 / -1
+        grid-row: 7/ span 4
+        width: 100%
+        height: 100%
+        @media screen and ( max-width: 800px)
+            grid-row: 4/span 1
+        @media screen and ( max-width: 425px)
+            grid-row: 5/span 1
+            grid-column: 7/span 6
+    
+    &__chair 
+        grid-column: 4/span 3
+        grid-row: 7/span 3
+        @media screen and ( max-width: 800px)
+            grid-row: 4/span 1
+        @media screen and ( max-width: 425px)
+            grid-row: 5/span 1
+            grid-column: 1/span 6
+        
+.team 
+    
+    &__container
+        display: grid
+
+        grid-template-columns: repeat(12,1fr)
+        
+        gap: 30px
+        padding-top: 80px
+        padding-bottom: 80px
+        background: #343235
+        @media screen and ( max-width: 600px)
+            padding-top: 40px
+            padding-right: 0
+            padding-left: 0 
+            padding-bottom: 0
+            gap: 10px
+            
+        .section-header
+            font-size: 130px
+            line-height: 120px
+            color: rgba(154,133,132,.1)
+            @media(max-width: 1050px)
+                font-size: 100px
+                line-height: 60px
+            @media(max-width: 800px)
+                font-size: 0
+            
+        .section-title 
+            grid-column: 2/span 6
+            @media(max-width: 800px)
+                grid-column: 3/-3
+                justify-self: center
+                text-align: center
+            @media screen and ( max-width: 600px)
+                font-size: 20px
+                line-height: 30px
+                
+            
+              
+    
+    &__text 
+        justify-self: end
+        font-weight: 500
+        font-size: 18px
+        line-height: 32px
+        color: #FBF3F0
+        grid-column: 2/span 6
+        grid-row: 2/span 3
+        @media screen and ( max-width: 600px)
+            font-size: 14px 
+            line-height: 20px
+        @media screen and ( max-width: 420px)
+            grid-column: 2/-2
+            
+    
+    &__paragraph
+        margin-bottom: 20px 
+    
+    &__paragraph-right 
+        grid-column: 8/-1
+        font-weight: 500
+        font-size: 14px
+        line-height: 24px
+        color: #FBF3F0
+        @media screen and ( max-width: 420px)
+            grid-column: 3/-3
+            grid-row: 5/6
+            text-align: center
+            margin-bottom: 0
+    &__photo
+        grid-row: 5/ span 1
+        grid-column: 1/-1
+        @media screen and ( max-width: 600px)
+            grid-row: 6/7
+    
+.collections 
+    margin-top: 80px
+    padding-bottom: 80px
+    @media(max-width: 800px)
+        margin-top: 30px
+        padding-bottom: 20px
+    &__container 
+        display: grid
+        grid-template-columns: repeat(12,1fr)
+        row-gap: 20px
+        // grid-auto-flow: dence  
+         
+    &__text
+        grid-row: 2/3
+        grid-column: 2/span 6
+        font-weight: 500
+        font-size: 18px
+        line-height: 32px
+        color: #695A59
+        @media screen and ( max-width: 600px)
+            grid-column: 2/-2
+        @media screen and ( max-width: 420px)
+            line-height: 24px
+            
+        
+    
+    &__list 
+        grid-row: 3/4
+        grid-column: 1/-1
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+        // grid-template-rows: repeat(4,1fr )
+        gap: 20px
+        @media(max-width: 600px)
+            grid-auto-rows: 100px
+            gap: 10px
+    
+    &__item 
+        // grid-column: 1/-1
+        @media(max-width: 420px)
+            grid-column: 1/-1
+        img
+            
+            height: 100%
+            width: 100%
+        
+        
+        
+        &-big
+            
+            &:first-child
+                grid-row: span 2
+                grid-column: 1/2
+                @media(max-width: 600px)
+                    grid-row: span 1
+                    grid-column: 1/-1
+                    
+                    
+                
+            &:last-child
+                grid-row: 3 /span 2
+                grid-column: 2/3
+                @media(max-width: 600px)
+                    grid-row: span 1
+                    grid-column: 1/-1
+                    
+                    
+                
+
+
+.footer 
+    
+    background: rgba(52, 50, 53, 0.9)
+    &__container
+       
+        display: grid
+        grid-template-columns: repeat(12,1fr)
+        grid-template-rows: 80px
+        row-gap: 20px 
+        padding-right: 0
+        @media screen and ( max-width: 700px)
+            padding: 0 0 40px 0
+            grid-template-rows: 300px
+            
+        .section-header    
+            grid-row: 2/3
+            grid-column: 1/span 6
+            font-size: 150px
+            color: rgba(154, 133, 132, 0.1)
+            @media(max-width: 800px)
+                font-size: 0
+                p
+                    display: none
+            @media screen and ( max-width: 700px)
+                grid-column: 2/-2
+        .section-title
+            grid-column: 3/span 9
+            font-size: 40px
+            line-height: 40px
+            color: $textLightTitle
+            @media screen and ( max-width: 700px)
+                grid-column: 2/-2
+                font-size: 30px
+                line-height: 30px
+                align-self: center
+            
+
+    &__text 
+        grid-row: 3/4
+
+        grid-column: 2/ span 5
+        font-weight: 500
+        font-size: 18px
+        line-height: 32px
+        color: #EEE9E6
+        opacity: 0.6
+        @media screen and ( max-width: 700px)
+            grid-column: 3/-3
+            font-size: 12px
+            line-height: 20px
+    &__form 
+        grid-row: 4/5
+        grid-column: 2/ span 5
+        @media screen and ( max-width: 700px)
+            grid-column: 3/-3
+    &__location
+        grid-column: 8 / span 5
+        grid-row: 1/ span 5
+        background: url(../images/footerBG.jpg) no-repeat center  / cover
+        @media screen and ( max-width: 700px)
+            grid-row: 1/2
+            grid-column: 1/-1
+            // max-height: 100%
+            // width: 100%
+            // align-self: center
+        
+        @media(max-width: 1015px)
+            height: 100%
+        
+        
+    
+
+
+
+.form
+    display: grid 
+    grid-template-columns: repeat(2,1fr )
+    row-gap: 30px
+    column-gap: 20px
+
+    @media screen and ( max-width: 700px)
+        grid-column: 2/-2
+        row-gap: 10px
+        column-gap: 10px
+
+    input[type="text"],input[type="number"]
+        grid-column:1/ -1
+        background: transparent
+        padding: 15px 0
+        border: none
+        border-bottom: 1px solid #A78587
+        font-weight: 500
+        font-size: 14px
+        line-height: 18px
+        color: #F6EDE9
+        &:hover
+            border-color: #c4b2b3
+        &:active
+            border-color: #ffffff
+    &__name 
+    
+    &__setTime 
+        background: transparent
+        padding: 15px 0
+        border: none
+        border-bottom: 1px solid #A78587
+        font-weight: 500
+        font-size: 14px
+        line-height: 18px
+        color: #F6EDE9
+        background: transparent
+        border-bottom: 1px solid #A78587
+        @media screen and ( max-width: 700px)
+            grid-column: 1/-1
+    
+    &__confirm 
+        display: grid
+        grid-template-columns: auto 1fr
+        align-items: center
+         font-weight: 500
+        font-size: 12px
+        ine-height: 18px
+        column-gap: 10px
+        
+        color: #FFFFFF
+        @media screen and ( max-width: 700px)
+            grid-column: 1/-1
+            justify-items: center
+            
+        
+        input[type='checkbox']
+            order: -1
+            width: 20px
+            height: 20px
+            // background: black
+            &:checked
+                background: orange
+    &__submit-btn 
+        grid-column: 1/-1
+        grid-row: 5/6
+        margin-top: 30px
+        width: 50%
+        justify-self: center
+        @media screen and ( max-width: 700px)
+            // grid-column: 5/-5
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
