@@ -30,6 +30,17 @@
                     <li class="main-nav__link-item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
                 </ul>
                 <a href="tel:+79774716150" class="main-nav__connection-btn btn"><span>Связаться <br> со мной</span> </a>
+                <div class="main-nav__burger">
+                    <span></span>
+                </div>
+                <div class="main-nav__hide hidden">
+                    <ul >
+                        <li ><a href="#portfolio" class="main-nav__link">Работы</a></li>
+                        <li ><a href="#about" class="main-nav__link">Что умею</a></li>
+                        <li ><a href="#contacts" class="main-nav__link">Контакты</a></li>
+                    </ul>
+                </div">
+                
             </nav>
         </div>
 
@@ -61,80 +72,87 @@
                     </li>
                 </ul>
                 <div class="information__wrapper btns-group">
-                    <button class="information__btn btn">Hire me</button>
-                    <button class="information__btn btn">See my resume</button>
+                    <!-- <button class="information__btn btn">Hire me</button> -->
+                    <button class="information__btn btn">Моё резюме</button>
                 </div>
             </div>
 
         </section>
         <section class="portfolio" id="portfolio">
             <div class="container portfolio__container">
-                <ul class="portfolio__navigation-list navigation">
+                <h2 class="portfolio__title">Работы</h2>
+                <label for="portfolio-filter" class="portfolio__label">Сортировать:</label>
+                <select name="navigations" id="portfolio-filter" class="portfolio__navigation-list" placeholder="asdf">
+                    <option value="all" selected>Всё</option>
+                    <option value="landing">Одностраничный сайт</option>
+                    <option value="store">Интернет магазин</option>
+                </select>
+                <!-- <ul class="portfolio__navigation-list navigation">
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">All</a>
+                        <a href="#" class="navigation__link" data-siteType="all">Всё</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Website</a>
+                        <a href="#" class="navigation__link" data-siteType="landing">Одностраничный сайт</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">App</a>
+                        <a href="#" class="navigation__link" data-siteType="store">Интернет магазин</a>
                     </li>
-                </ul>
+                </ul> -->
                 <ul class="portfolio__list">
-                    <li class="portfolio__item item">
+                    <li class="portfolio__item item" data-sitetype="store" >
                         <div class="item__info">
-                            <h3 class="item__title"><a target="_blank" href="projects/cruises/index.html"> Организация
-                                    морских прогулок </a><span>2021</span></h3>
-                            <p class="item__description">website <a href="#" class="item__like"><i
+                            <h3 class="item__title"><a target="_blank" href="projects/cruises/index.html"> Организация морских прогулок </a><span>2021</span></h3>
+                            <p class="item__description">Интернет магазин <a href="#" class="item__like"><i
                                         class="fas fa-heart"></i><span class="item__like-count">6</span></a></p>
                         </div>
                         <img src="images/Cruises.JPG" alt="Project">
                     </li>
-                    <li class="portfolio__item item">
+                    <li class="portfolio__item item" data-sitetype="landing">
                         <div class="item__info">
                             <h3 class="item__title"><a target="_blank" href="projects/abojur/index.html">Дизайнерский
                                     текстиль </a><span>2021</span></h3>
-                            <p class="item__description">website
-                                <a href="#" class="item__like"> <i class="fas fa-heart"></i><span class="item__like-count">11</span>
+                            <p class="item__description">Одностраничный сайт
+                                <a href="#" class="item__like"> <i class="fas fa-heart"></i><span
+                                        class="item__like-count">11</span>
                                 </a>
                             </p>
                         </div>
 
                         <img src="images/Abojur.jpg" alt="Project">
                     </li>
-                    <li class="portfolio__item item">
+                    <li class="portfolio__item item" data-sitetype="landing">
                         <div class="item__info">
                             <h3 class="item__title"><a target="_blank" href="projects/yoga/index.html">Группа Йоги
                                 </a><span>2021</span></h3>
-                            <p class="item__description">website <a href="#" class="item__like"><i
+                            <p class="item__description">Одностраничный сайт <a href="#" class="item__like"><i
                                         class="fas fa-heart"></i><span class="item__like-count">6</span></a></p>
                         </div>
 
                         <img src="images/Yoga.jpg" alt="Project">
                     </li>
-                    <li class="portfolio__item item">
+                    <li class="portfolio__item item" data-sitetype="store">
                         <div class="item__info">
                             <h3 class="item__title"><a target="_blank" href="projects/wathesshop/index.html"> Магазин
                                     часов </a> <span>2021</span></h3>
-                            <p class="item__description">website <a href="#" class="item__like"><i
+                            <p class="item__description">Интернет магазин <a href="#" class="item__like"><i
                                         class="fas fa-heart"></i><span class="item__like-count">3</span></a></p>
                         </div>
                         <img src="images/Watches.JPG" alt="Project">
                     </li>
-                    <li class="portfolio__item item">
+                    <li class="portfolio__item item" data-sitetype="store">
                         <div class="item__info">
                             <h3 class="item__title"><a target="_blank" href="projects/althome/index.html"> Аренда домов
                                 </a><span>2021</span></h3>
-                            <p class="item__description">website <a href="#" class="item__like"><i
+                            <p class="item__description">Интернет магазин <a href="#" class="item__like"><i
                                         class="fas fa-heart"></i><span class="item__like-count">6</span></a></p>
                         </div>
                         <img src="images/AltHome.JPG" alt="Project">
                     </li>
-                    <li class="portfolio__item item">
+                    <li class="portfolio__item item" data-sitetype="landing">
                         <div class="item__info">
                             <h3 class="item__title"><a target="_blank" href="projects/monstory/index.html">Строительные
                                     работы</a><span>2021</span></h3>
-                            <p class="item__description">website <a href="#" class="item__like"><i
+                            <p class="item__description">Одностраничный сайт <a href="#" class="item__like"><i
                                         class="fas fa-heart"></i><span class="item__like-count">7</span></a></p>
                         </div>
                         <img src="images/Monstroy.JPG" alt="Project">
@@ -168,11 +186,13 @@
                     </ul>
                     <div class="btns-group">
 
-                        <button class="information__btn btn">See my resume</button>
+                        <button class="information__btn btn">Моё резюме</button>
                     </div>
                 </div>
             </div>
         </section>
+        
+       
     </main>
     <footer class="main-footer" id="contacts">
         <div class="main-footer__container container">
@@ -197,12 +217,56 @@
                 </ul>
                 <ul class="main-nav__links-list">
                     <li class="main-nav__link-item"><a href="#" class="main-nav__link">Работы</a></li>
-                    <li class="main-nav__link-item"><a href="#" class="main-nav__link">Обо мне</a></li>
+                    <li class="main-nav__link-item"><a href="#" class="main-nav__link">Что умею</a></li>
                     <li class="main-nav__link-item"><a href="#" class="main-nav__link">Контакты</a></li>
                 </ul>
                 <a href="tel:+79774716150" class="main-nav__connection-btn btn">Связаться <br> со мной</a>
         </div>
     </footer>
+    <template class="project__template" id="project__template">
+        <div class="project hidden">
+            <div class="project__wrapper">
+                <div class="project__image-container">
+                    <img src="images/Abojur.jpg" alt="project__img" class="project__img">
+                </div>
+                <div class="project__info">
+                    <h2 class="project__title">
+                        <a href="#" class="project__link"></a>
+                    </h2>
+                    <p class="project__subtitle"></p>
+                    <p class="project__client"></p>
+                    <p class="project__description"></p>
+                    <button class="btn-close btn "></button>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template class="resume__template" id="resume__template">
+        <div class="resume hidden">
+            <div class="resume__wrapper">
+                <h2 class="resume__title">
+                    Моё резюме
+                </h2>
+                <div class="resume__content">
+                    <ul class="resume__experience-list">
+                        <h3 class="resume__subtitle">Опыт работы:</h3>
+                        <li class="resume__experience-item">Фриланс - с 2020 по настоящее время</li>
+                        <li class="resume__experience-item"><span>... список будет дополняться</span></li>
+                    </ul>
+                    <ul class="resume__education-list">
+                        <h3 class="resume__subtitle">Образование:</h3>
+                        <li class="resume__education-item">Высшее образование - Бийский технологический институт (филиал) Алтайский государственный университет им. И.И. Ползунова</li>
+                        <li class="resume__education-item">Интерактивные курсы по HTML, CSS, JavaScript</li>
+                        <li class="resume__education-item">Онлайн обучение веб разработке</li>
+                        <li class="resume__education-item">Видео и лекции по разработке современных сайтов</li>
+                        <li class="resume__education-item"><span>... список будет дополняться</span></li>
+                    </ul>
+                </div>
+                <a href="tel:+79774716150" class="btn"><span>Связаться  со мной</span> </a>
+                <button class="btn-close"></button>
+            </div>
+        </div>
+    </template>
     <script src="https://kit.fontawesome.com/1454bfd116.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>

@@ -703,12 +703,15 @@ img {
   .filter input {
     margin-right: 10px; }
   .filter__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    @media screen and (max-width: 768px) {
+      .filter__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
   .filter__sort {
     padding: 15px 0;
     border: none;
