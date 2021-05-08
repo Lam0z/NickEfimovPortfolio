@@ -45,7 +45,6 @@ for(let i=0;i<resumeShowBtns.length;i++){
 // filter my created works per sitetype
 navigation.addEventListener('change',()=>{
     for(let work of works){
-        console.log(work.dataset.sitetype);
         if(navigation.value!=work.dataset.sitetype&&navigation.value!='all'){
             work.classList.add('hidden')
           }else{
@@ -61,47 +60,47 @@ let projectsData=[
         url:'projects/cruises/index.html',
         subtitle:'website',
         client: 'Клиент: WEB студия',
-        description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eum perspiciatis aut accusan molestiae voluptatibus. Explicabo voluptates doloribus quisquam est  recusandae fuga vero laborum quod, at error nobis quasi ad mollitia nesciunt modi officia natus   quos eius accusamus facere.Accusamus eum perspiciatis aut accusantium consectetur repudiandae   nam esse dolores quam ea recusandae ex doloribus, tenetur molestiae voluptatibus. Explicabo  voluptates doloribus quisquam est recusandae fuga vero laborum quod, at error nobis quasi admollitia nesciunt modi officia natus quos eius accusamus facere'
+        description:'Организация морских прогулок по черному морю'
     }, 
     {
         img:'images/Abojur.jpg',
         title:'Студия Дизайнерского текстиля',
-        url:'projects/cruises/index.html',
+        url:'projects/abojur/index.html',
         subtitle:'website',
         client: 'Клиент: WEB студия',
-        description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eum perspiciatis aut accusan molestiae voluptatibus. Explicabo voluptates doloribus quisquam est  recusandae fuga vero laborum quod, at error nobis quasi ad mollitia nesciunt modi officia natus   quos eius accusamus facere.Accusamus eum perspiciatis aut accusantium consectetur repudiandae   nam esse dolores quam ea recusandae ex doloribus, tenetur molestiae voluptatibus. Explicabo  voluptates doloribus quisquam est recusandae fuga vero laborum quod, at error nobis quasi admollitia nesciunt modi officia natus quos eius accusamus facere'
+        description:'Интерьерный текстиль по индивидуальным размерам с доставкой на дом'
     },
     {
         img:'images/Yoga.jpg',
         title:'Группа для занятий Йогой',
-        url:'projects/cruises/index.html',
+        url:'projects/yoga/index.html',
         subtitle:'website',
         client: 'Клиент: WEB студия',
-        description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eum perspiciatis aut accusan molestiae voluptatibus. Explicabo voluptates doloribus quisquam est  recusandae fuga vero laborum quod, at error nobis quasi ad mollitia nesciunt modi officia natus   quos eius accusamus facere.Accusamus eum perspiciatis aut accusantium consectetur repudiandae   nam esse dolores quam ea recusandae ex doloribus, tenetur molestiae voluptatibus. Explicabo  voluptates doloribus quisquam est recusandae fuga vero laborum quod, at error nobis quasi admollitia nesciunt modi officia natus quos eius accusamus facere'
+        description:'Работаем с 2011 года, у нас работают сертифицированные инструктора по Кундалини-йоге. Большой опыт преподавания йоги для начинающих и продолжающих.'
     },
     {
         img:'images/Watches.JPG',
         title:'Магазин часов',
-        url:'projects/cruises/index.html',
+        url:'projects/wathesshop/index.html',
         subtitle:'Интернет магазин',
         client: 'Клиент: WEB студия',
-        description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eum perspiciatis aut accusan molestiae voluptatibus. Explicabo voluptates doloribus quisquam est  recusandae fuga vero laborum quod, at error nobis quasi ad mollitia nesciunt modi officia natus   quos eius accusamus facere.Accusamus eum perspiciatis aut accusantium consectetur repudiandae   nam esse dolores quam ea recusandae ex doloribus, tenetur molestiae voluptatibus. Explicabo  voluptates doloribus quisquam est recusandae fuga vero laborum quod, at error nobis quasi admollitia nesciunt modi officia natus quos eius accusamus facere'
+        description:'Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.'
     },
     {
         img:'images/AltHome.JPG',
         title:'Аренда домов загородной недвижимости',
-        url:'projects/cruises/index.html',
+        url:'projects/althome/index.html',
         subtitle:'Интернет магазин',
         client: 'Клиент: WEB студия',
-        description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eum perspiciatis aut accusan molestiae voluptatibus. Explicabo voluptates doloribus quisquam est  recusandae fuga vero laborum quod, at error nobis quasi ad mollitia nesciunt modi officia natus   quos eius accusamus facere.Accusamus eum perspiciatis aut accusantium consectetur repudiandae   nam esse dolores quam ea recusandae ex doloribus, tenetur molestiae voluptatibus. Explicabo  voluptates doloribus quisquam est recusandae fuga vero laborum quod, at error nobis quasi admollitia nesciunt modi officia natus quos eius accusamus facere'
+        description:'Отдохните от суеты мегаполиса в уютном тёплом доме в окружении экологически чистых лесов, рек и озёр'
     },
     {
         img:'images/Monstroy.JPG',
         title:'Строительные работы',
-        url:'projects/cruises/index.html',
+        url:'projects/monstory/index.html',
         subtitle:'Интернет магазин',
         client: 'Клиент: WEB студия',
-        description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eum perspiciatis aut accusan molestiae voluptatibus. Explicabo voluptates doloribus quisquam est  recusandae fuga vero laborum quod, at error nobis quasi ad mollitia nesciunt modi officia natus   quos eius accusamus facere.Accusamus eum perspiciatis aut accusantium consectetur repudiandae   nam esse dolores quam ea recusandae ex doloribus, tenetur molestiae voluptatibus. Explicabo  voluptates doloribus quisquam est recusandae fuga vero laborum quod, at error nobis quasi admollitia nesciunt modi officia natus quos eius accusamus facere'
+        description:'Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с 1992 года, и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных и пуско-наладочных работ по электроснабжению зданий и сооружений.'
     }
     
 ]
